@@ -38,21 +38,14 @@ tasks.register('makeJar', Copy) {
 
 publishing {
     publications {
-        maven(MavenPublication) {
-            from components.findByName('release')
-            groupId = 'com.decryptable'
-            artifactId = 'aichat'
+        release(MavenPublication) {
+            groupId = 'com.github.decryptable'
+            artifactId = 'gpt-lib'
             version = '1.0.0'
-        }
-    }
+            // artifact("$buildDir/outputs/aar/gpt-release.aar")
 
-    repositories {
-        maven {
-            name = "GitHubPackages"
-            url = "https://maven.pkg.github.com/decryptable/AndroidAIChatLib"
-            credentials {
-                username = System.getenv("GITHUB_ACTOR")
-                password = System.getenv("GITHUB_TOKEN")
+            afterEvaluate {
+                from components.findByName('release')
             }
         }
     }
