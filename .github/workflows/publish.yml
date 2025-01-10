@@ -43,11 +43,11 @@ jobs:
         run: ./gradlew :gpt:makeJar
 
       - name: Create GitHub release tag based on version input 🎯
-        run: git tag v${{ github.event.inputs.version }}
+        run: git tag ${{ github.event.inputs.version }}
 
       - name: Upload JAR to GitHub Release 📤
         uses: ncipollo/release-action@v1
         with:
           artifacts: 'gpt/release/chatai.jar'
-          tag: v${{ github.event.inputs.version }}
+          tag: ${{ github.event.inputs.version }}
           makeLatest: true
