@@ -1,6 +1,9 @@
-# AndroidAIChatLib
+# chat-lib
 
-AndroidAIChatLib is a Java library designed to integrate AI-based chat functionality into Android
+![JitPack](https://img.shields.io/jitpack/version/com.github.decryptable/gpt-lib?style=for-the-badge&label=com.github.decryptable%3Agpt-lib&link=https%3A%2F%2Fjitpack.io%2F%23decryptable%2Fgpt-lib%2F1.0.0)
+
+
+**`chat-lib`** is a Java library designed to integrate AI-based chat functionality into Android
 applications. This library provides an easy-to-use interface for developers to add AI chat
 capabilities to their apps.
 
