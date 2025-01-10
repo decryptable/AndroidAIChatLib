@@ -24,7 +24,6 @@ android {
     }
 }
 
-
 dependencies {
 }
 
@@ -38,14 +37,17 @@ tasks.register('makeJar', Copy) {
 
 publishing {
     publications {
-        release(MavenPublication) {
+        maven(MavenPublication) {
             groupId = 'com.github.decryptable'
             artifactId = 'gpt-lib'
             version = '1.0.0'
-            // artifact("$buildDir/outputs/aar/gpt-release.aar")
 
-            afterEvaluate {
-                from components.findByName('release')
+            pom {
+                description = 'Android Java Library to create a free AI chatbot for your app'
+            }
+
+            repositories {
+                mavenLocal()
             }
         }
     }
