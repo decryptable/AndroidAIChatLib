@@ -28,7 +28,6 @@ android {
 dependencies {
 }
 
-// task to export contents as jar
 tasks.register('makeJar', Copy) {
     dependsOn("assembleRelease")
     from('build/intermediates/aar_main_jar/release/syncReleaseLibJars')
@@ -44,10 +43,6 @@ publishing {
             groupId = 'com.decryptable'
             artifactId = 'aichat'
             version = '1.0.0'
-
-            artifact(tasks.named("makeJar")) {
-                classifier = null
-            }
         }
     }
 
