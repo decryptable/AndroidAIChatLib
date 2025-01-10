@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 
 android {
     namespace 'com.decryptable.aichat'
@@ -34,4 +35,17 @@ tasks.register('makeJar', Copy) {
     into('release/')
     include('classes.jar')
     rename('classes.jar', 'chatai.jar')
+}
+
+publishing {
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = "https://maven.pkg.github.com/decryptable/AndroidAIChatLib"
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
 }
