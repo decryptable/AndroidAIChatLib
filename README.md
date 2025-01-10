@@ -1,9 +1,9 @@
-# chat-lib
+# gpt-lib
 
-![JitPack](https://img.shields.io/jitpack/version/com.github.decryptable/gpt-lib?style=for-the-badge&label=com.github.decryptable%3Agpt-lib&link=https%3A%2F%2Fjitpack.io%2F%23decryptable%2Fgpt-lib%2F1.0.0)
+![JitPack](https://img.shields.io/jitpack/version/com.github.decryptable/gpt-lib?style=for-the-badge&label=com.github.decryptable%3Agpt-lib&link=https%3A%2F%2Fjitpack.io%2F%23decryptable%2Fgpt-lib%2F1.0.0) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/decryptable/gpt-lib/publish.yml?branch=master&style=for-the-badge&label=Publish%20Status&link=https%3A%2F%2Fgithub.com%2Fdecryptable%2Fgpt-lib%2Factions%2Fworkflows%2Fpublish.yml)
 
 
-**`chat-lib`** is a Java library designed to integrate AI-based chat functionality into Android
+**`gpt-lib`** is a Java library designed to integrate AI-based chat functionality into Android
 applications. This library provides an easy-to-use interface for developers to add AI chat
 capabilities to their apps.
 
