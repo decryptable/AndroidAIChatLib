@@ -38,6 +38,19 @@ tasks.register('makeJar', Copy) {
 }
 
 publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.findByName('release')
+            groupId = 'com.decryptable'
+            artifactId = 'aichat'
+            version = '1.0.0'
+
+            artifact(tasks.named("makeJar")) {
+                classifier = null
+            }
+        }
+    }
+
     repositories {
         maven {
             name = "GitHubPackages"
