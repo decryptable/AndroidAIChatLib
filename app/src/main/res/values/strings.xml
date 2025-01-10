@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Chat AI</string>
+    <string name="failed_to_register_user">Failed to register user.</string>
+    <string name="failed_to_get_bot_response">Failed to get bot response.</string>
+</resources>
