@@ -12,8 +12,7 @@ capabilities to their apps.
 To use the library in your Android project, download the latest version of `chatai.jar` from
 the [releases page](https://github.com/decryptable/AndroidAIChatLib/releases/latest).
 
-Once downloaded, add the `chatai.jar` file to your Android project as follows:
-
+## Installation (recommended)
 1. Add the JitPack repository to your build file
 
     ```gradle
